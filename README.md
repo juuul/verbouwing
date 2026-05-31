@@ -3,7 +3,6 @@
 Eenvoudige statische website voor:
 - keuken specificaties
 - overkapping specificaties
-- afzuigkap specificaties
 - dak specificaties
 
 ## Structuur
@@ -16,7 +15,6 @@ Eenvoudige statische website voor:
 ├── index.html
 ├── keuken.html
 ├── overkapping.html
-├── afzuigkap.html
 ├── dak.html
 ```
 
