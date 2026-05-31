@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verbouwing - Overkapping</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Overkapping</h1>
+    <nav aria-label="Hoofdmenu">
+      <ul>
+        <li><a href="index.html">Overzicht</a></li>
+        <li><a href="dak.html">Dak</a></li>
+        <li><a href="afzuigkap.html">Afzuigkap</a></li>
+        <li><a href="overkapping.html" aria-current="page">Overkapping</a></li>
+        <li><a href="tuintegels.html">Tuintegels</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="card">
+      <h2>Overkapping Specificaties</h2>
+      <p class="muted">Overzicht van alle materialen en instructies voor de overkapping</p>
+
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-button active" data-tab="materialen">Materialen</button>
+          <button class="tab-button" data-tab="constructie">Constructie</button>
+        </div>
+
+        <div class="tab-content">
+          <!-- Materialen Tab -->
+          <div id="materialen-tab" class="tab-pane active">
+            <h3>Materiaallijst</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Categorie</th>
+                  <th>Materiaal</th>
+                  <th>Specifieke Instructie voor de Aannemer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Overkapping</td>
+                  <td>[Type/Model]</td>
+                  <td>[Specificaties en constructie-instructies]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Constructie Tab -->
+          <div id="constructie-tab" class="tab-pane">
+            <h3>Constructie-instructies</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Categorie</th>
+                  <th>Materiaal</th>
+                  <th>Specifieke Instructie voor de Aannemer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Montage</td>
+                  <td>[Bevestigingsmaterialen]</td>
+                  <td>[Montage-instructies]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Checklist voor het Gesprek met de Aannemer</h2>
+      <p class="muted">Aandachtspunten tijdens de bouw van de overkapping</p>
+
+      <div class="checklist-section">
+        <h3>1. Voorbereiding</h3>
+        <ul>
+          <li>[Aandachtspunt 1]</li>
+          <li>[Aandachtspunt 2]</li>
+        </ul>
+
+        <h3>2. Constructie</h3>
+        <ul>
+          <li>[Aandachtspunt 1]</li>
+          <li>[Aandachtspunt 2]</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer muted">
+    <small>Overkapping specificaties - voor aannemer</small>
+  </footer>
+
+  <script>
+    // Tab switching functionality
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const tabName = button.getAttribute('data-tab');
+
+        // Remove active class from all buttons and panes
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+
+        // Add active class to clicked button and corresponding pane
+        button.classList.add('active');
+        document.getElementById(tabName + '-tab').classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -2,11 +2,10 @@
 
 Eenvoudige statische website voor:
 - projectoverzicht
-- dagelijkse notities
-- checklist / to-do
-- planning & voortgang
-- materialen, maten en kosten
-- foto-overzicht
+- dak renovatie specificaties
+- afzuigkap specificaties
+- overkapping specificaties
+- tuintegels specificaties
 
 ## Structuur
 
@@ -16,11 +15,10 @@ Eenvoudige statische website voor:
 │   └── css/
 │       └── styles.css
 ├── index.html
-├── notes.html
-├── checklist.html
-├── timeline.html
-├── materials.html
-└── photos.html
+├── dak.html
+├── afzuigkap.html
+├── overkapping.html
+└── tuintegels.html
 ```
 
 ## Lokaal draaien
