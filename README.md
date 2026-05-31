@@ -1,11 +1,10 @@
 # Verbouwing Notes Site
 
 Eenvoudige statische website voor:
-- projectoverzicht
-- dak renovatie specificaties
-- afzuigkap specificaties
+- keuken specificaties
 - overkapping specificaties
-- tuintegels specificaties
+- afzuigkap specificaties
+- dak specificaties
 
 ## Structuur
 
@@ -15,10 +14,10 @@ Eenvoudige statische website voor:
 │   └── css/
 │       └── styles.css
 ├── index.html
-├── dak.html
-├── afzuigkap.html
+├── keuken.html
 ├── overkapping.html
-└── tuintegels.html
+├── afzuigkap.html
+├── dak.html
 ```
 
 ## Lokaal draaien
@@ -33,6 +32,8 @@ python3 -m http.server 8080
 ```
 
 Open daarna: `http://localhost:8080`
+
+De root (`index.html`) stuurt direct door naar `keuken.html`.
 
 Optie 2:
 - Open `index.html` direct in de browser.
