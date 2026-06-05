@@ -28,63 +28,14 @@
 
       <div class="tabs">
         <div class="tab-buttons">
-          <button class="tab-button active" data-tab="overzicht">Totaal Overzicht</button>
-          <button class="tab-button" data-tab="stap1">Stap 1</button>
+          <button class="tab-button active" data-tab="stap1">Stap 1</button>
           <button class="tab-button" data-tab="stap2">Stap 2</button>
+          <button class="tab-button" data-tab="resultaat">Resultaat</button>
         </div>
 
         <div class="tab-content">
-          <!-- Totaal Overzicht Tab -->
-          <div id="overzicht-tab" class="tab-pane active">
-            <h3>Totaal Overzicht Materialen</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Categorie</th>
-                  <th>Materiaal</th>
-                  <th>Specificaties</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Fundering</td>
-                  <td>Schroefpaal fundering</td>
-                  <td>Reeds geplaatst</td>
-                </tr>
-                <tr>
-                  <td>Paalhouders</td>
-                  <td><a href="https://www.wovar.nl/paalhouder-verstelbaar-m20-verzinkt/" target="_blank">Paalhouder verstelbaar M20 verzinkt</a></td>
-                  <td>4 stuks, in huis</td>
-                </tr>
-                <tr>
-                  <td>Staanders</td>
-                  <td>Geschaafde houten palen 20x20 cm</td>
-                  <td>4 stuks, in huis</td>
-                </tr>
-                <tr>
-                  <td>Horizontale balken (laag 1)</td>
-                  <td>Geschaafde balken 20x20 cm</td>
-                  <td>2 stuks, 3 meter, moet ingekort worden tot ~2 meter</td>
-                </tr>
-                <tr>
-                  <td>Horizontale balken (laag 2)</td>
-                  <td>Ongeschaafde balken 20x20 cm</td>
-                  <td>2 stuks, 5 meter lang, moet ingekort worden voor 1 meter overstek en juiste positie over schutting</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <h3>Foto's</h3>
-            <p class="muted">Referentiebeelden van de overkapping</p>
-
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-              <img src="https://github.com/user-attachments/assets/bcafaf28-4eae-464a-8724-e618e8a6ebfd" alt="Overkapping totaal overzicht 1" style="max-width: 100%; height: auto;">
-              <img src="https://github.com/user-attachments/assets/dce03c0a-2f8d-4354-9a6d-663b894a476f" alt="Overkapping totaal overzicht 2" style="max-width: 100%; height: auto;">
-            </div>
-          </div>
-
           <!-- Stap 1 Tab -->
-          <div id="stap1-tab" class="tab-pane">
+          <div id="stap1-tab" class="tab-pane active">
             <h3>Stap 1: Fundering en Hoofdconstructie</h3>
 
             <div class="checklist-section">
@@ -276,6 +227,55 @@
                 <li>Controleer of er geen lekkages zijn</li>
               </ul>
 
+            </div>
+          </div>
+
+          <!-- Resultaat Tab -->
+          <div id="resultaat-tab" class="tab-pane">
+            <h3>Resultaat Materialen</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Categorie</th>
+                  <th>Materiaal</th>
+                  <th>Specificaties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fundering</td>
+                  <td>Schroefpaal fundering</td>
+                  <td>Reeds geplaatst</td>
+                </tr>
+                <tr>
+                  <td>Paalhouders</td>
+                  <td><a href="https://www.wovar.nl/paalhouder-verstelbaar-m20-verzinkt/" target="_blank">Paalhouder verstelbaar M20 verzinkt</a></td>
+                  <td>4 stuks, in huis</td>
+                </tr>
+                <tr>
+                  <td>Staanders</td>
+                  <td>Geschaafde houten palen 20x20 cm</td>
+                  <td>4 stuks, in huis</td>
+                </tr>
+                <tr>
+                  <td>Horizontale balken (laag 1)</td>
+                  <td>Geschaafde balken 20x20 cm</td>
+                  <td>2 stuks, 3 meter, moet ingekort worden tot ~2 meter</td>
+                </tr>
+                <tr>
+                  <td>Horizontale balken (laag 2)</td>
+                  <td>Ongeschaafde balken 20x20 cm</td>
+                  <td>2 stuks, 5 meter lang, moet ingekort worden voor 1 meter overstek en juiste positie over schutting</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Foto's</h3>
+            <p class="muted">Referentiebeelden van de overkapping</p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <img src="https://github.com/user-attachments/assets/5312b2f7-9268-46d2-9dd0-57b186720e6c" alt="Overkapping resultaat 1" style="max-width: 100%; height: auto;">
+              <img src="https://github.com/user-attachments/assets/9c147200-7829-4d47-a25b-63d629f462ed" alt="Overkapping resultaat 2" style="max-width: 100%; height: auto;">
             </div>
           </div>
         </div>
