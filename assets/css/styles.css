@@ -52,10 +52,18 @@ nav a {
   background: var(--surface);
 }
 
-nav a[aria-current="page"] {
-  border-color: var(--accent);
-  color: var(--accent);
+.nav-completed {
+  color: #16a34a !important;
+  border-color: #16a34a !important;
+  background: #dcfce7 !important;
   font-weight: 700;
+}
+
+nav a[aria-current="page"] {
+  border-color: #ea580c !important;
+  color: #ea580c !important;
+  font-weight: 700 !important;
+  background: #fff7ed !important;
 }
 
 .card {
@@ -168,4 +176,38 @@ th {
   margin-top: 0;
   margin-bottom: 1rem;
   color: var(--text);
+}
+
+/* Completed items styling */
+.completed-item {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.completed-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0.5rem;
+  color: #16a34a;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.badge-reed {
+  display: inline-block;
+  background: #dcfce7b0;
+  color: #166534;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.nav-completed {
+  color: #16a34a !important;
+  border-color: #16a34a !important;
+  background: #dcfce7 !important;
+  font-weight: 700;
 }
