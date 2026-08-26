@@ -1,40 +1,39 @@
-# Verbouwing Notes Site
+# Projectoverzicht-site
 
-Eenvoudige statische website voor:
-- keuken specificaties
-- overkapping specificaties
-- dak specificaties
+Eenvoudige statische website met de specificaties van alle projecten:
+- keuken
+- dakpannen en isolatie
+- overkapping
+- tuintegels
+- review (onduidelijkheden)
 
 ## Structuur
 
 ```text
 .
 ├── assets/
-│   └── css/
-│       └── styles.css
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── tabs.js
 ├── index.html
 ├── keuken.html
+├── dakpannen-en-isolatie.html
 ├── overkapping.html
-├── dak.html
+├── tuintegels.html
+└── review.html
 ```
 
 ## Lokaal draaien
 
 Er is geen build-stap nodig: dit is een statische site.
-
-Optie 1 (Python):
+Open `index.html` direct in de browser, of serveer de map lokaal:
 
 ```bash
-cd /tmp/workspace/juuul/verbouwing-
-python3 -m http.server 8080
+python -m http.server 8080
 ```
 
 Open daarna: `http://localhost:8080`
-
-De root (`index.html`) stuurt direct door naar `keuken.html`.
-
-Optie 2:
-- Open `index.html` direct in de browser.
 
 ## Inhoud aanpassen
 

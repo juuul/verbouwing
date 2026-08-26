@@ -28,8 +28,14 @@ body {
   padding: 1rem;
 }
 
+.tagline {
+  margin: -0.25rem 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .site-header h1 {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.25rem;
   font-size: 1.5rem;
 }
 
@@ -162,6 +168,27 @@ th {
   color: var(--accent);
   border-bottom-color: var(--accent);
   font-weight: 700;
+}
+
+.tab-button.tab-done {
+  color: #15803d;
+}
+
+.tab-button.tab-done.active {
+  color: #15803d;
+  border-bottom-color: #16a34a;
+}
+
+.banner-done {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  border-radius: 0.55rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.banner-done strong {
+  color: #166534;
 }
 
 .tab-pane {

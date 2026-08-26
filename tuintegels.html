@@ -11,7 +11,7 @@
     <h1>Tuintegels</h1>
     <nav aria-label="Hoofdmenu">
       <ul>
-        <li><a href="index.html">Verbouwing</a></li>
+        <li><a href="index.html">Projecten</a></li>
         <li><a href="keuken.html">Keuken</a></li>
         <li><a href="dakpannen-en-isolatie.html">Dakpannen en isolatie</a></li>
         <li><a href="overkapping.html" class="nav-completed">Overkapping</a></li>
@@ -102,21 +102,6 @@
     <small>Tuintegels specificaties - voor aannemer</small>
   </footer>
 
-  <script>
-    // Tab switching functionality
-    document.querySelectorAll('.tab-button').forEach(button => {
-      button.addEventListener('click', () => {
-        const tabName = button.getAttribute('data-tab');
-
-        // Remove active class from all buttons and panes
-        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-
-        // Add active class to clicked button and corresponding pane
-        button.classList.add('active');
-        document.getElementById(tabName + '-tab').classList.add('active');
-      });
-    });
-  </script>
+  <script src="assets/js/tabs.js"></script>
 </body>
 </html>

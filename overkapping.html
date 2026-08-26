@@ -11,10 +11,11 @@
     <h1>Overkapping</h1>
     <nav aria-label="Hoofdmenu">
       <ul>
-        <li><a href="index.html">Verbouwing</a></li>
+        <li><a href="index.html">Projecten</a></li>
         <li><a href="keuken.html">Keuken</a></li>
         <li><a href="dakpannen-en-isolatie.html">Dakpannen en isolatie</a></li>
-        <li><a href="overkapping.html" aria-current="page" class="nav-completed">Overkapping</a></li>        <li><a href="tuintegels.html">Tuintegels</a></li>
+        <li><a href="overkapping.html" aria-current="page" class="nav-completed">Overkapping</a></li>
+        <li><a href="tuintegels.html">Tuintegels</a></li>
         <li><a href="review.html">Review</a></li>
       </ul>
     </nav>
@@ -27,16 +28,14 @@
 
       <div class="tabs">
         <div class="tab-buttons">
-          <button class="tab-button active" data-tab="stap1" style="background: #dcfce7b0; color: #166534; border-bottom-color: #86efac;">Stap 1 ✓</button>
-          <button class="tab-button" data-tab="stap2" style="background: #dcfce7b0; color: #166534; border-bottom-color: #86efac;">Stap 2 ✓</button>
-          <button class="tab-button" data-tab="resultaat" style="background: #dcfce7b0; color: #166534; border-bottom-color: #86efac;">Resultaat ✓</button>
+          <button class="tab-button active tab-done" data-tab="stap1">Stap 1</button>
+          <button class="tab-button tab-done" data-tab="stap2">Stap 2</button>
+          <button class="tab-button tab-done" data-tab="resultaat">Resultaat</button>
         </div>
 
-        <!-- Status banner -->
-        <div style="background: #dcfce7b0; border: 1px solid #86efac; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1rem;">
-          <span style="font-size: 1.2rem; margin-right: 0.5rem;">✓</span>
-          <strong style="color: #166534;">Overkapping is afgerond!</strong>
-          <span class="muted"> Alle stappen zijn voltooid.</span>
+        <div class="banner-done">
+          <strong>Overkapping is afgerond!</strong>
+          <span class="muted">Alle stappen zijn voltooid.</span>
         </div>
 
         <div class="tab-content">
@@ -58,7 +57,7 @@
               </ul>
 
               <h4>Constructie Overzicht</h4>
-              <img src="https://github.com/user-attachments/assets/d8313743-f8a5-497a-9020-e29b75441848" alt="Constructie overzicht overkapping" style="max-width: 100%; height: auto; margin: 1rem 0;">
+              <img src="https://github.com/user-attachments/assets/d8313743-f8a5-497a-9020-e29b75441848" alt="Constructie overzicht overkapping">
               <p class="muted"><em>Op de fundering komen de geschaafde palen (4 stuks, iets lichter in het plaatje)</em></p>
 
               <h4>Montage-instructies</h4>
@@ -174,9 +173,9 @@
               <h4>Referentiebeelden</h4>
               <p class="muted">Foto's van de dakconstructie</p>
 
-              <div style="display: flex; flex-direction: column; gap: 1rem; margin: 1rem 0;">
-                <img src="https://github.com/user-attachments/assets/14f9e546-49e2-4ed3-92c9-4fa0e8e2855a" alt="Overkapping dakconstructie 1" style="max-width: 100%; height: auto;">
-                <img src="https://github.com/user-attachments/assets/d15908de-758a-4c1e-8316-52eb17753f61" alt="Overkapping dakconstructie 2" style="max-width: 100%; height: auto;">
+              <div class="photo-stack">
+                <img src="https://github.com/user-attachments/assets/14f9e546-49e2-4ed3-92c9-4fa0e8e2855a" alt="Overkapping dakconstructie 1">
+                <img src="https://github.com/user-attachments/assets/d15908de-758a-4c1e-8316-52eb17753f61" alt="Overkapping dakconstructie 2">
               </div>
 
               <h4>Montage-instructies</h4>
@@ -280,10 +279,10 @@
             <h3>Foto's</h3>
             <p class="muted">Referentiebeelden van de overkapping</p>
 
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-              <img src="https://github.com/user-attachments/assets/5312b2f7-9268-46d2-9dd0-57b186720e6c" alt="Overkapping resultaat 1" style="max-width: 100%; height: auto;">
-              <img src="https://github.com/user-attachments/assets/9c147200-7829-4d47-a25b-63d629f462ed" alt="Overkapping resultaat 2" style="max-width: 100%; height: auto;">
-            </div>
+              <div class="photo-stack">
+                <img src="https://github.com/user-attachments/assets/5312b2f7-9268-46d2-9dd0-57b186720e6c" alt="Overkapping resultaat 1">
+                <img src="https://github.com/user-attachments/assets/9c147200-7829-4d47-a25b-63d629f462ed" alt="Overkapping resultaat 2">
+              </div>
           </div>
         </div>
       </div>
@@ -294,21 +293,6 @@
     <small>Overkapping specificaties - voor aannemer</small>
   </footer>
 
-  <script>
-    // Tab switching functionality
-    document.querySelectorAll('.tab-button').forEach(button => {
-      button.addEventListener('click', () => {
-        const tabName = button.getAttribute('data-tab');
-
-        // Remove active class from all buttons and panes
-        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-
-        // Add active class to clicked button and corresponding pane
-        button.classList.add('active');
-        document.getElementById(tabName + '-tab').classList.add('active');
-      });
-    });
-  </script>
+  <script src="assets/js/tabs.js"></script>
 </body>
 </html>

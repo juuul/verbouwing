@@ -11,7 +11,7 @@
     <h1>Dakpannen en isolatie</h1>
     <nav aria-label="Hoofdmenu">
       <ul>
-        <li><a href="index.html">Verbouwing</a></li>
+        <li><a href="index.html">Projecten</a></li>
         <li><a href="keuken.html">Keuken</a></li>
         <li><a href="dakpannen-en-isolatie.html" aria-current="page">Dakpannen en isolatie</a></li>
         <li><a href="overkapping.html" class="nav-completed">Overkapping</a></li>
@@ -104,9 +104,8 @@
               <tbody>
                 <tr>
                   <td>Velux Dakraam</td>
-                  <td>1x Velux Dakraam (GGU UK04 (u04))</td>
-                  <td>Inclusief Velux Pro+ pakket (BDX isolatieframe en BFX waterkerend manchet). Dit zorgt voor een koudebrugvrije inbouw.</td>
-                  <td>https://dakraamplaza.nl/velux-dakraam/tuimelvenster/ggu-ck02-0070/?utm_source=google&utm_medium=paid&utm_campaign=22463519975&utm_term=&utm_content=_&gad_source=1&gad_campaignid=22457002212&gbraid=0AAAAABnWWpAI0CXrgL44TaeuFqEJmCwnq&gclid=CjwKCAjw7p_UBhBlEiwAhpIs74eV3dUK-8TcQgJxSeQSJbax_kxZt1BNYe3FCkh4dT-q9x48mbOF3hoCufwQAvD_BwE</td>
+                  <td>1x Velux Dakraam (GGU UK04)</td>
+                  <td>Inclusief Velux Pro+ pakket (BDX isolatieframe en BFX waterkerend manchet). Dit zorgt voor een koudebrugvrije inbouw. Referentie: <a href="https://dakraamplaza.nl/velux-dakraam/tuimelvenster/ggu-ck02-0070/" target="_blank" rel="noopener">dakraamplaza.nl</a></td>
                 </tr>
                 <tr>
                   <td>Waterafvoer</td>
@@ -141,10 +140,10 @@
                 <tr>
                   <td>Decentrale WTW</td>
                   <td>Econox Eco Pair Plus (SG-ERV-150)</td>
-                  <td>https://www.ventilatieland.nl/nl_NL/p/econox-eco-pair-plus-decentrale-wtw-unit-sg-erv-150-wit/35474/  608 euro</td>
                   <td>
                     1x complete WTW-unit met geïntegreerde CO₂-regeling.
                     Plaatsen in de buitenmuur van de slaapkamer volgens de montagevoorschriften van Econox.
+                    Prijs: 608 euro. Referentie: <a href="https://www.ventilatieland.nl/nl_NL/p/econox-eco-pair-plus-decentrale-wtw-unit-sg-erv-150-wit/35474/" target="_blank" rel="noopener">ventilatieland.nl</a>
                   </td>
                 </tr>
                 <tr>
@@ -208,21 +207,6 @@
     <small>Dakpannen en isolatie specificaties - voor aannemer</small>
   </footer>
 
-  <script>
-    // Tab switching functionality
-    document.querySelectorAll('.tab-button').forEach(button => {
-      button.addEventListener('click', () => {
-        const tabName = button.getAttribute('data-tab');
-
-        // Remove active class from all buttons and panes
-        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-        document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-
-        // Add active class to clicked button and corresponding pane
-        button.classList.add('active');
-        document.getElementById(tabName + '-tab').classList.add('active');
-      });
-    });
-  </script>
+  <script src="assets/js/tabs.js"></script>
 </body>
 </html>
