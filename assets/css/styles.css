@@ -231,3 +231,17 @@ th {
   font-weight: 600;
   vertical-align: middle;
 }
+
+.flag {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.25rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-left: 0.5rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
