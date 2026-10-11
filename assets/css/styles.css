@@ -96,6 +96,77 @@ nav a[aria-current="page"] {
   margin-bottom: 1rem;
 }
 
+.planning-card {
+  border-top: 4px solid var(--accent);
+}
+
+.planning-intro {
+  margin-bottom: 1.25rem;
+}
+
+.planning-intro h2 {
+  margin: 0 0 0.25rem;
+}
+
+.planning-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.eyebrow {
+  margin: 0 0 0.3rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.work-list {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work-item {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  padding: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 0.55rem;
+  background: #fbfdff;
+}
+
+.work-number {
+  display: grid;
+  flex: 0 0 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+.work-copy h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.work-copy h3 a {
+  color: var(--text);
+}
+
+.subtasks {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
 h2 {
   margin-top: 0;
 }
